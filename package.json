@@ -1,17 +1,20 @@
 {
   "name": "shino-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A powerful Discord bot for moderation, utility, and fun.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "postinstall": "npm rebuild better-sqlite3"
   },
-  "keywords": [],
+  "keywords": ["discord", "bot", "moderation", "shino"],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "better-sqlite3": "^12.11.1",
     "discord.js": "^14.26.4",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "uuid": "^10.0.0"
   }
 }
